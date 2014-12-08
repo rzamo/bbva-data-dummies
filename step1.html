@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>BBVA Data Dummies</title>
+<link rel="stylesheet" href="css/dummies.css"/>
+</head>
+<body id="step1">
+
+  <div id="wrap">
+    <div id="wrapContent">
+  <h1>BBVA Data Dummies</h1>
+  <h2>Compara tu consumo con la media de tu zona</h2>
+  
+  <form action="step2.html">
+    <select id="category" name="category">
+      <option value="">Elige una categoría...</option>
+      <option value="all">Todas</option>
+      <option value="mx_auto">Auto</option>
+      <option value="mx_barsandrestaurants">Bares y restaurantes</option>
+      <option value="mx_beauty">Belleza</option>
+      <option value="mx_food">Comida</option>
+      <option value="mx_education">Educación</option>
+      <option value="mx_hyper">Hiper</option>
+      <option value="mx_home">Hogar</option>
+      <option value="mx_book">Libros</option>
+      <option value="mx_pet">Mascotas</option>
+      <option value="mx_fashion">Moda</option>
+      <option value="mx_music">Música</option>
+      <option value="mx_leisure">Ocio</option>
+      <option value="mx_office">Oficina</option>
+      <option value="mx_health">Salud</option>
+      <option value="mx_services">Servicios</option>
+      <option value="mx_tech">Tecnología</option>
+      <option value="mx_travel">Viajes</option>
+      <option value="mx_shoes">Zapatos</option>
+    </select>
+
+    <label for="month">Mes:</label>
+    <select id="month" name="month">
+      <option value="0">201311</option>
+      <option value="1">201312</option>
+      <option value="2">201401</option>
+      <option value="3">201402</option>
+      <option value="4">201403</option>
+      <option value="5">201404</option>
+    </select>
+
+    <label for="zip">Código postal:</label>
+    <input type="text" id="zip" name="zip" size="4"></input>
+
+    <label for="avg">Tu gasto medio:</label>
+    <input type="text" id="avg" name="avg" size="4"></input>
+
+    <input type="submit" value="Compárame"/>
+  </form>
+
+  </div>
+  </div>
+
+<script>
+window.onload = init;
+
+function init() {
+   setTimeout(function() { document.getElementById("wrap").className = 'shown'; }, 1000);
+}
+</script>
+
+</body>
+</html>
