@@ -51,7 +51,7 @@ var messages =
      'Tu consumo es similar al de una mujer de entre 36 y 45 años',
      'Tu consumo es similar al de una mujer de entre 46 y 55 años',
      'Tu consumo es similar al de una mujer de entre 56 y 65 años',
-     'Tu consumo es similar al de mujer mayor de más de 65 años',
+     'Tu consumo es similar al de una mujer mayor de más de 65 años',
      'Tu consumo es similar al de un hombre menor de 18 años',
      'Tu consumo es similar al de un hombre de entre 19 y 25 años',
      'Tu consumo es similar al de un hombre de entre 26 y 35 años',
@@ -304,7 +304,7 @@ function initYourDummy(value) {
 function compareDummies(){
     var pos = 0 ;
     var x ,y ;
-    for (var i = 0; i < data.length; i ++) {
+    for (var i = 0; i < nHumans; i ++) {
         if (i == 0) 
 	    x = Math.abs(value - data[i]);
         else {
